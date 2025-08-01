@@ -1,0 +1,85 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+}
+
+.calculator-container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    border-collapse: collapse;
+    font: normal 4vw Arial, Helvetica, sans-serif;
+    background: #333;
+    border: none;
+}
+
+tr {
+    background-color: #4e494d;
+}
+
+td {
+    width: 25vw;
+    height: 12.5vh;
+    border: 1px solid #4e494d;
+    padding: 0;
+    cursor: pointer;
+    font-size: 4vw;
+    transition: background 0.2s;
+    user-select: none;
+}
+
+#inputBox {
+    background-color: #4e494d;
+    text-align: right;
+    width: 100%;
+    font-size: 5vw;
+    color: #fff;
+    border: none;
+    box-sizing: border-box;
+    padding: 2vw;
+    height: 10vh;
+}
+
+.digitButton {
+    background-color: #887e88;
+}
+
+.operatorButton {
+    background-color: #ff9e06;
+}
+
+.ACButton {
+    background-color: #656165;
+}
+
+@media (max-width: 600px) {
+    table {
+        font-size: 8vw;
+    }
+    #inputBox {
+        font-size: 10vw;
+        padding: 3vw;
+        height: 14vw;
+    }
+    td {
+        font-size: 8vw;
+        height: 16vw;
+    }
+}
